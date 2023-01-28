@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: "Space Mono", monospace;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+h1{
+    color: white;
+    font-size: 5rem;
+    font-family: "Space Mono", monospace;
+    cursor: pointer;
+    padding: .4rem 3rem .7rem 3rem;
+    margin: 5rem;
+    border-radius: 1.5rem;
+    transition-duration: .7s;
+    transition-timing-function: ease-in-out;
+}
+
+h1:hover {
+    background-color: rgb(5, 255, 180);
+    color: black;
+    box-shadow: 0 0 50px 20px rgba(49, 255, 190, .8);
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+    
+}
+
+pre {
+    font-size: 1rem;
+    font-family: "Space Mono", monospace;
+    color: rgb(5, 255, 180);
+    text-shadow: rgb(49, 255, 190) 50px 10 10px;
+    transition-timing-function: ease-in-out;
+    
+}
+
+
+.glow {
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #eeeeee, 0 0 20px #000000, 0 0 30px #000000, 0 0 40px #000000, 
+                   0 0 50px rgb(49, 255, 190), 0 0 60px rgb(49, 255, 190), 0 0 70px rgb(49, 255, 190);
+    }
+    to {
+      text-shadow: 0 0 20px #eeeeee, 0 0 30px rgb(94, 224, 245), 0 0 40px rgb(94, 224, 245), 0 0 50px rgb(94, 224, 245),
+                   0 0 60px rgb(94, 224, 245), 0 0 70px rgb(94, 224, 245), 0 0 80px rgb(94, 224, 245);
+    }
+}
